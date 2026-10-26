@@ -1,6 +1,25 @@
-### Using aider to create a React.JS login interface
+## Using Aider to create a React.JS login interface
 
 This project is a React.js login form built with TypeScript and the Bootstrap library.
+
+#### Background
+
+Built a React.js login page with Aider, using a local Ollama instance running Spark-X2.5-4B (Q8_0) as the backend model.
+
+#### Setup
+
+##### Aider Configuration
+
+Here is the configuration used for Aider(.aider.conf.yml)
+
+```bash
+model: ollama_chat/spark
+edit-format: whole
+no-show-model-warnings: true
+auto-commits: true
+map-tokens: 8192 
+max-chat-history-tokens: 40960
+```
 
 #### Prerequisites
 

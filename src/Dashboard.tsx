@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Dashboard: React.FC = () => {
   return (
     <div className="dashboard-page py-5">
-      <div className="container">
+      <div className="container-fluid">
         <div className="d-flex justify-content-between align-items-center mb-4">
           <div>
             <h2 className="fw-bold mb-1 text-dark">Admin Dashboard</h2>
