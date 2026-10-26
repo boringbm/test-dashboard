@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 interface LoginProps {
@@ -11,6 +12,7 @@ interface FormData {
 }
 
 const Login: React.FC<LoginProps> = ({ onLogin }) => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState<FormData>({
     username: '',
     password: '',
@@ -33,12 +35,20 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
       setError('Please fill in all fields.');
       return;
     }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.username)) {
+      setError('Please enter a valid email ID.');
+      return;
+    }
+
     onLogin?.(formData.username, formData.password);
+    navigate('/dashboard');
   };
 
   return (
     <div className="row justify-content-center">
-      <div className="col">
+      <div className="col-md-6 col-lg-5">
         <div className="card shadow-sm">
           <div className="card-body p-4">
             <h2 className="card-title text-center mb-4">Login</h2>

@@ -1,5 +1,7 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './Login';
+import Dashboard from './Dashboard';
 
 interface AppProps {
   children?: React.ReactNode;
@@ -7,9 +9,12 @@ interface AppProps {
 
 const App: React.FC<AppProps> = () => {
   return (
-    <div className="container d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
-      <Login />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
