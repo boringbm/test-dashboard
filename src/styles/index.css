@@ -3,7 +3,7 @@
 
 /* Custom styles for the login form */
 body {
-  background-color: #f8f9fa;
+  background-color: #f1f5f9;
   margin: 0;
   padding: 0;
 }
@@ -21,4 +21,53 @@ body {
 
 .card-body {
   padding: 2rem;
+}
+
+/* Dashboard Theme Styles */
+.dashboard-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2f7 0%, #e2e8f0 100%);
+}
+
+.stat-card {
+  border-radius: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+.stat-card-users {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+}
+
+.stat-card-orders {
+  background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+}
+
+.stat-card-revenue {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.chart-wrapper {
+  background: linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%);
+  border: 1px solid #e2e8f0;
+}
+
+.custom-dashboard-table {
+  border: 1px solid #e2e8f0;
+}
+
+.custom-dashboard-table tbody tr:nth-of-type(odd) {
+  background-color: #f8fafc;
+}
+
+.custom-dashboard-table tbody tr:hover {
+  background-color: #e0e7ff;
 }
