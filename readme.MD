@@ -43,10 +43,4 @@ This project is a React.js login form built with TypeScript and the Bootstrap li
 
 #### Deployment
 
-To deploy the UI, you can use any static file hosting service that supports HTML and JavaScript, such as:
-
-- **Netlify**: Connect your `dist` folder to a Netlify site.
-- **Vercel**: Deploy the Vite project directly to Vercel.
-- **GitHub Pages**: Deploy the `dist` folder to GitHub Pages.
-
-For Netlify or Vercel, ensure that the `dist` folder is correctly configured in the deployment settings.
+To deploy the UI, you can use any static file hosting service that supports HTML and JavaScript.
