@@ -38,7 +38,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
 
   return (
     <div className="row justify-content-center">
-      <div className="col-md-6 col-lg-5">
+      <div className="col">
         <div className="card shadow-sm">
           <div className="card-body p-4">
             <h2 className="card-title text-center mb-4">Login</h2>
@@ -72,9 +72,11 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                   required
                 />
               </div>
-              <button type="submit" className="btn btn-primary w-100">
-                Login
-              </button>
+              <div className="d-flex justify-content-end">
+                <button type="submit" className="btn btn-primary w-50">
+                  Login
+                </button>
+              </div>
             </form>
           </div>
         </div>
